@@ -32,8 +32,8 @@ describe("Github page tests", () => {
       visible: true,
     });
     const actual = await page.$eval(btnSelector, link => link.textContent);
-    expect(actual).toContain("Sign up for free", {timeout: 60000})
-  });
+    expect(actual).toContain("Sign up for free")
+  },60000);
 });
 
 describe("Should check titles for GitHub pages", () => {
